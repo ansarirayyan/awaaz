@@ -1,0 +1,10 @@
+{
+	"name": "awaaz",
+	"version": "0.1",
+	"description": "A bot for Discord DMs made by ansarirayyan#6710",
+	"manifest_version": 2,
+	"content_scripts": [{
+		"matches": ["*://discordapp.com/channels/@me/*"],
+		"js": ["awaaz.js"]
+	}]
+}
