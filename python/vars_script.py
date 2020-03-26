@@ -6,6 +6,3 @@ mouse = Controller()
 
 print('The current pointer position is {0}'.format(
     mouse.position))
-
-
-# variables for mouse corrdinates are in main.py
