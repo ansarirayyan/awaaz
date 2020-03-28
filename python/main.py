@@ -10,7 +10,7 @@ keyboard = KeyboardController()
 def oprintniftree(latestMsg):
     file = open("prevMsg","r+")
     print(latestMsg)
-    if latestMsg != file:
+    if latestMsg != file.read():
         if "awaaz" in latestMsg: # command prefix
             if "-v" in latestMsg:
                 v_number()
@@ -42,8 +42,10 @@ def oprintniftree(latestMsg):
                 keyboard.press(Key.enter)
                 keyboard.release(Key.enter)
                 join_call()
-            file.write(latestMsg)
-            file.close()
+        file.seek(0)
+        file.truncate()
+        file.write(latestMsg)
+    file.close()
 
 
 class Handler(BaseHTTPRequestHandler):

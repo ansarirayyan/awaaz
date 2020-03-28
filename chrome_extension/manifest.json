@@ -1,7 +1,7 @@
 {
 	"name": "awaaz",
-	"version": "0.3.0",
-	"description": "A bot for Discord DMs made by ansarirayyan#6710",
+	"version": "0.3.1",
+	"description": "A bot for Discord DMs made by ansarirayyan",
 	"manifest_version": 2,
 	"content_scripts": [{
 		"matches": ["*://discordapp.com/channels/@me/*"],

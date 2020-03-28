@@ -23,7 +23,7 @@ yt1ThumbY = 327
 
 # metadata variables
 
-versionNumb = "0.3.0"
+versionNumb = "0.3.1"
 
 
 def v_number():
