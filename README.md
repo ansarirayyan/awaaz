@@ -10,7 +10,7 @@ It's a Discord "bot" which runs on the OS via the power of Python on group DMs. 
 * `awaaz join call` will make the bot click the join button if somebody in the DM is calling
 
 # Configuration
-This software has two components to it: The Python part, and the JS Chromium extension. The Python section is located in the `python` directory (intuitive naming scheme, right?) whistl the JS component is stored in `chrome_extension`. Simply load the unpacked extension into your favorite Chromium-based browser and run `main.py`, and have fun! It is recommended that you run this software on a single-board system, such as a Raspberry Pi, LibreComputer, or some other similar, low-powered computer.
+This software has two components to it: The Python part, and the JS Chromium extension. The Python section is located in the `python` directory (intuitive naming scheme, right?) while the JS component is stored in `chrome_extension`. Simply load the unpacked extension into your favorite Chromium-based browser and run `main.py`, and have fun! It is recommended that you run this software on a single-board system, such as a Raspberry Pi, LibreComputer, or some other similar, low-powered computer.
 
 ## Music Playback in a call
 In order to play music through a DM call, you will need to pipe your output audio into the input. If you're on Linux, then I would recommend using a combination of PulseAudio and Audacity, [as outlined in this StackExchange thread](https://unix.stackexchange.com/questions/82259/how-to-pipe-audio-output-to-mic-input). If on Windows, try VoiceMeter Banana. If on macOS, perhaps look into Sunflower.

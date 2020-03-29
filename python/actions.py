@@ -11,19 +11,19 @@ mouse = MouseController()
 
 # variables for mouse corrdinates
 
-joinCallX = -1072
-joinCallY = 539
+joinCallX = 1144
+joinCallY = 413
 
-txtFieldX = -1456
-txtFieldY = 987
+txtFieldX = 457
+txtFieldY = 1034
 
-yt1ThumbX = 515
-yt1ThumbY = 327
+yt1ThumbX = 583
+yt1ThumbY = 334
 
 
 # metadata variables
 
-versionNumb = "0.3.1"
+versionNumb = "0.3.2"
 
 
 def v_number():
@@ -57,13 +57,13 @@ def play_music(song):
     keyboard.press(Key.enter)
     keyboard.release(Key.enter)
 
-    time.sleep(10)
+    time.sleep(12)
 
     mouse.position = (yt1ThumbX, yt1ThumbY) # move to the location of the first thumbnail on YT search page
     mouse.press(Button.left)
     mouse.release(Button.left)
 
-    time.sleep(5)
+    time.sleep(10)
 
     keyboard.press(Key.ctrl_l)
     keyboard.press(Key.tab)
@@ -101,8 +101,11 @@ def antifbi():
 
 def join_call():
     mouse.position = (joinCallX, joinCallY)
+    time.sleep(1)
     mouse.press(Button.left)
     mouse.release(Button.left)
+    time.sleep(1)
     mouse.position = (txtFieldX, txtFieldY)
     mouse.press(Button.left)
     mouse.release(Button.left)
+    time.sleep(1)
