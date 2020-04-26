@@ -1,3 +1,5 @@
+Discord has added video calling to servers recently, thus rendering this project obsolete.
+
 # So, what is this?
 It's a Discord "bot" which runs on the OS via the power of Python on group DMs. Such a thing is not possible via the stock Discord API. The main star of the show is the Python package `pynput`.
 
